@@ -1,0 +1,39 @@
+[cloud_user@ip ~]$ pyenv install 3.7.1
+Downloading Python-3.7.1.tar.xz...
+-> https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz
+Installing Python-3.7.1...
+Installed Python-3.7.1 to /home/cloud_user/.pyenv/versions/3.7.1
+
+[cloud_user@ip ~]$  pyenv global 3.7.1
+
+Requirements:
+1) Prompt the user for the temperature in Fahrenheit.
+2) Convert the string temperature to a float.
+3) Process the Fahrenheit float value through the formula: celsius = (temp - 32) * 5 / 9
+4) Print the original and converted values to the screen.
+
+--Create the ~/to-celsius.py Script and Make It Executable with python3.7
+
+Create the file and set the shebang:    file name: ~/to-celsius.py
+
+Make the file executable by using chmod:     $ chmod u+x ~/to-celsius.py
+
+Code:
+#!/usr/bin/env python3.7
+
+#python implementation goes here
+
+fahrenheit = float(input("What temp in Fahrenheit would you like converted to celcius? "))
+
+#Formula Fahrenheit to Celcius
+celcius = (fahrenheit - 32) * 5/9
+
+#Rounding up Celcius to 3 decimal
+
+print(fahrenheit, 'F is', round(celcius,3),'C')
+
+
+
+$ ./to-celsius.py
+What temp in Fahrenheit would you like converted to celcius? 60
+60.0 F is 15.556 C
