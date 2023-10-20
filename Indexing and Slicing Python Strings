@@ -23,8 +23,10 @@ First Character: H
 Last Character: o
 Middle Character: l
 
-CODE:Print the Even Index Characters and Odd Index Characters
-cat string-info.py
+CODE:Print the Even Index Characters and Odd Index Characters 
+(Use slicing with the step option. Change the starting index, step by 2.)
+
+$cat string-info.py
 #!/usr/bin/env python3.7
 message = input("Enter a message: ")
 
@@ -38,7 +40,8 @@ print("Odd index character",message[1::2])
 ========The script in action:
 
 CODE: Print the String in Reverse
-cat string-info.py
+
+$cat string-info.py
 #!/usr/bin/env python3.7
 
 message = input("Enter a message: ")
