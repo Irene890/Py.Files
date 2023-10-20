@@ -1,0 +1,62 @@
+Create the string-info.py Script and Take User Input
+To be able to execute the script, so to begin create an empty script with a shebang and make it executable:
+
+'#!/usr/bin/env python3.7'-- (used to specify the path to the Python interpreter that should be used to run a Python script on the first line.)
+
+$ echo '#!/usr/bin/env python3.7' > string-info.py
+$ chmod +x string-info.py
+
+CODE: Print the First, Last, and Middle Characters from the User's Input
+#!/usr/bin/env python3.7
+
+message = input("Enter a message: ")
+
+print("First Character:", message[0])
+print("Last Character:", message[-1])
+print("Middle Character:", message[int(len(message)/2)])
+
+=======The script in action:
+
+[cloud_user@ip-10-0-1-141 ~]$ ./string-info.py
+Enter a message: Hello
+First Character: H
+Last Character: o
+Middle Character: l
+
+CODE:Print the Even Index Characters and Odd Index Characters
+cat string-info.py
+#!/usr/bin/env python3.7
+message = input("Enter a message: ")
+
+print("First Character:", message[0])
+print("Last Character:", message[-1])
+print("Middle Character:", message[int(len(message)/2)])
+
+print("Even index character", message[0::2])
+print("Odd index character",message[1::2])
+
+========The script in action:
+
+CODE: Print the String in Reverse
+cat string-info.py
+#!/usr/bin/env python3.7
+
+message = input("Enter a message: ")
+
+print("First Character:", message[0])
+print("Last Character:", message[-1])
+print("Middle Character:", message[int(len(message)/2)])
+
+print("Even index character", message[0::2])
+print("Odd index character",message[1::2])
+print("Reversed Message:", message[::-1])
+
+=======The script in action:
+./string-info.py
+Enter a message: Hello
+First Character: H
+Last Character: o
+Middle Character: l
+Even index character Hlo
+Odd index character el
+Reversed Message: olleH
